@@ -6,6 +6,7 @@ import MainBanner from '../../sections/Ecommerce/MainBanner';
 import ProductSection from '../../sections/Ecommerce/ProductSection';
 import Banners from '../../sections/Ecommerce/Banners';
 import Footer from '../../sections/Ecommerce/Footer';
+import MobileBottomNav from '../../sections/Ecommerce/MobileBottomNav';
 
 export default function HomeScreen() {
 
@@ -16,6 +17,7 @@ export default function HomeScreen() {
                 <MainBanner />
                 <ProductSection />
                 <Banners/>
+                <MobileBottomNav/>
             </Container>
             <Footer/>
         </>

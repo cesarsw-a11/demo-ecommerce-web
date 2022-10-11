@@ -21,7 +21,7 @@ export default function ProductSection() {
             <Typography variant='h3' sx={{ color: 'black', mt: 3, mb: 2, ml: 2 }}>
                 Men - New Arrivals
             </Typography>
-            <Grid container justifyContent='space-between'>
+            <Grid container justifyContent='space-between' marginBottom={5}>
                 {productsItems_Men.map((item, key) => (
                     <ProductCard key={key} productName={item} />
                 ))}

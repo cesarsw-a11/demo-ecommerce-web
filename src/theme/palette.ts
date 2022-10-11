@@ -64,7 +64,7 @@ declare module '@mui/material' {
 const PRIMARY = {
   lighter: '#FBDDCD',
   light: '#F0B7B7',
-  main: '#BE1111',
+  main: '#171520',
   dark: '#A20909',
   darker: '#5B0321'
 };

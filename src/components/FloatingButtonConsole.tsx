@@ -27,7 +27,7 @@ export default function FloatingButtonConsole() {
       onClick={handleOpen}
       sx={{
         position: 'fixed',
-        bottom: 16,
+        bottom: 60,
         right: 16
       }}
     >
