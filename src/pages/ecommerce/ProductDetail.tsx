@@ -147,15 +147,15 @@ export default function ProductDetail() {
                     </Card>
                 </Box>
             </Grid>
-            <Card sx={{padding: 1, justifyContent: 'space-around', position: 'fixed', bottom: 0, left: 0, right: 0, display: { sm: 'none', xs: 'flex' } }}>
+            <Card sx={{ padding: 1, justifyContent: 'space-around', position: 'fixed', bottom: 0, left: 0, right: 0, display: { sm: 'none', xs: 'flex' } }}>
                 <Grid item xs={2}>
-                    <Button className='bottomNavDetail' sx={{ backgroundColor: '#F4F4F4', color: 'black', width: '100%'}} startIcon={
-                        <FavoriteBorderIcon/>
+                    <Button className='bottomNavDetail' sx={{ backgroundColor: '#F4F4F4', color: 'black', width: '100%' }} startIcon={
+                        <FavoriteBorderIcon />
                     }>
                     </Button >
                 </Grid>
                 <Grid item xs={9} >
-                    <Button className='bottomNavDetail' sx={{ backgroundColor: '#333333', color: 'white', width: '100%'}} startIcon={
+                    <Button className='bottomNavDetail' sx={{ backgroundColor: '#333333', color: 'white', width: '100%' }} startIcon={
                         <img src={ic_shoppingBag_white} />
                     }>
                         Add to Bag

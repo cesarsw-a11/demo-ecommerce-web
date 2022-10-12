@@ -24,6 +24,7 @@ import userBorder from '../../../src/assets/icons/ic_userBorder.svg';
 import ic_bell from '../../../src/assets/icons/ic_bell.svg';
 import moreIcon from '../../../src/assets/icons/ic_more.svg';
 import searchIcon from '../../../src/assets/icons/ic_search_ecommerce.svg';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -74,6 +75,8 @@ const navItems = ['Women', 'Men', 'Accesories', 'SALE'];
 export default function NavBar(props: Props) {
     const { window } = props;
 
+    const navigate = useNavigate();
+
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const container = window !== undefined ? () => window().document.body : undefined;
@@ -102,6 +105,10 @@ export default function NavBar(props: Props) {
         </Box>
     );
 
+    const backHome = () => {
+        navigate('/');
+    }
+
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -116,7 +123,9 @@ export default function NavBar(props: Props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <img src={logo} alt="overlap" width="100px" />
+                    <IconButton onClick={backHome}>
+                        <img src={logo} alt="overlap" width="100px" />
+                    </IconButton>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
                             <Button key={item} sx={{
