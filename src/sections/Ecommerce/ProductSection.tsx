@@ -17,14 +17,14 @@ export default function ProductSection() {
             <Grid container justifyContent='space-between' sx={{ display: { sm: 'none', xs: 'block' } }} >
                 <Carousel>
                     {productsItems_Women.map((item, key) => (
-                        <ProductCard key={key} productName={item} />
+                        <ProductCard key={key} productName={item} id={key} />
                     ))}
                 </Carousel>
             </Grid>
             <Grid container justifyContent='space-between' sx={{ display: { sm: 'flex', xs: 'none' } }} >
                 {productsItems_Women.map((item, key) => (
 
-                    <ProductCard key={key} productName={item} />
+                    <ProductCard key={key} productName={item} id={key}/>
                 ))}
             </Grid>
             <Typography variant='h3' sx={{ color: 'black', mt: 3, mb: 2, ml: 2 }}>
@@ -33,13 +33,13 @@ export default function ProductSection() {
             <Grid container justifyContent='space-between' marginBottom={5} sx={{ display: { sm: 'none', xs: 'block' } }}>
                 <Carousel>
                     {productsItems_Men.map((item, key) => (
-                        <ProductCard key={key} productName={item} />
+                        <ProductCard key={key} productName={item} id={key} />
                     ))}
                 </Carousel>
             </Grid>
             <Grid container justifyContent='space-between' marginBottom={5} sx={{ display: { sm: 'flex', xs: 'none' } }}>
                     {productsItems_Men.map((item, key) => (
-                        <ProductCard key={key} productName={item} />
+                        <ProductCard key={key} productName={item} id={key}/>
                     ))}
             </Grid>
         </>

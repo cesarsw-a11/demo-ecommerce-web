@@ -12,14 +12,10 @@ export default function HomeScreen() {
 
     return (
         <>
-            <Navbar />
-            <Container sx={{ minWidth: '100%' }}>
-                <MainBanner />
-                <ProductSection />
-                <Banners/>
-                <MobileBottomNav/>
-            </Container>
-            <Footer/>
+            <MainBanner />
+            <ProductSection />
+            <Banners />
+            <MobileBottomNav />
         </>
     )
 }
